@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f3f3f3"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/colorPrimaryDark"
+            android:fontFamily="serif"
+            android:gravity="center"
+            android:text="FAQ"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="12dp"
+            app:srcCompat="@drawable/left_arrow" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:padding="20dp"
+        android:text="@string/faq_question"
+        android:textStyle="bold"
+        android:layout_weight="0" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:padding="20dp"
+        android:text="@string/faq_answer"
+        android:textSize="12sp"
+        android:layout_weight="7" />
+
+    <Button
+        android:id="@+id/btn_go_to_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background_round_corners"
+        android:backgroundTint="@color/colorPrimaryDark"
+        android:layout_gravity="center"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="Go To Settings"
+        android:textColor="@color/colorWhite"
+        android:tint="@color/colorWhite"
+        app:srcCompat="@drawable/close"
+        android:layout_weight="0" />
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView_banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        app:adSize="BANNER"
+        app:adUnitId="@string/banner_ad_id" />
+
+</LinearLayout>

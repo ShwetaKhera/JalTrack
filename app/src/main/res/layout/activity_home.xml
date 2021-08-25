@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/constraint_layout_home">
+
+    <fragment
+        android:id="@+id/fragment"
+        class="com.jaltrack.ClockFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <ImageView
+        android:id="@+id/image_add_glass"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/background_glass_empty"
+        android:padding="19dp"
+        android:layout_marginBottom="20dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:backgroundTint="@color/colorWhite"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.950"
+        app:srcCompat="@drawable/glass_1" />
+
+    <ImageView
+        android:id="@+id/image_home_colored"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:srcCompat="@drawable/home_colored" />
+
+    <ImageView
+        android:id="@+id/image_goal_outline"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.11"
+        app:layout_constraintStart_toEndOf="@+id/image_home_colored"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.5"
+        app:srcCompat="@drawable/goal_outline" />
+
+    <ImageView
+        android:id="@+id/image_home_outlined"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/image_home_colored"
+        app:layout_constraintEnd_toEndOf="@+id/image_home_colored"
+        app:layout_constraintStart_toStartOf="@+id/image_home_colored"
+        app:layout_constraintTop_toTopOf="@+id/image_home_colored"
+        app:srcCompat="@drawable/home_outlined" />
+
+    <ImageView
+        android:id="@+id/image_goal_colored"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/image_goal_outline"
+        app:layout_constraintEnd_toEndOf="@+id/image_goal_outline"
+        app:layout_constraintStart_toStartOf="@+id/image_goal_outline"
+        app:layout_constraintTop_toTopOf="@+id/image_goal_outline"
+        app:srcCompat="@drawable/goal_colored" />
+
+    <ImageView
+        android:id="@+id/image_advice_colored"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/image_goal_outline"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/advice_colored" />
+
+    <ImageView
+        android:id="@+id/image_advice_outline"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_advice_colored"
+        app:layout_constraintEnd_toEndOf="@+id/image_advice_colored"
+        app:layout_constraintStart_toStartOf="@+id/image_advice_colored"
+        app:layout_constraintTop_toTopOf="@+id/image_advice_colored"
+        app:srcCompat="@drawable/advice_outline" />
+
+    <ImageView
+        android:id="@+id/image_settings_colored"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toEndOf="@+id/image_advice_colored"
+        app:layout_constraintTop_toTopOf="@+id/textView4"
+        app:srcCompat="@drawable/settings_colored" />
+
+    <ImageView
+        android:id="@+id/image_settings_outlined"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_settings_colored"
+        app:layout_constraintEnd_toEndOf="@+id/image_settings_colored"
+        app:layout_constraintStart_toStartOf="@+id/image_settings_colored"
+        app:layout_constraintTop_toTopOf="@+id/image_settings_colored"
+        app:srcCompat="@drawable/settings_outlined" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

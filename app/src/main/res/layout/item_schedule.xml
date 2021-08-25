@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layer_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/schedule_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingLeft="30dp"
+            android:text="05:00 AM"
+            android:textColor="@color/colorBlack"
+            android:textSize="22sp" />
+
+        <Switch
+            android:id="@+id/schedule_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:enabled="true" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/schedule_days"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layer_1"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="30dp"
+        android:animateLayoutChanges="true"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <ToggleButton
+            android:id="@+id/sunday"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_toggle"
+            android:checked="true"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textOff="Sun"
+            android:textOn="Sun"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/monday"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_toggle"
+            android:checked="true"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textOff="Mon"
+            android:textOn="Mon"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/tuesday"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_toggle"
+            android:checked="true"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textOff="Tue"
+            android:textOn="Tue"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/wednesday"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_toggle"
+            android:checked="true"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textOff="Wed"
+            android:textOn="Wed"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/thursday"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_toggle"
+            android:checked="true"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textOff="Thu"
+            android:textOn="Thu"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/friday"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_toggle"
+            android:checked="true"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textOff="Fri"
+            android:textOn="Fri"
+            android:textSize="12sp" />
+
+        <ToggleButton
+            android:id="@+id/saturday"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/btn_toggle"
+            android:checked="true"
+            android:textAllCaps="false"
+            android:textColor="@color/colorBlack"
+            android:textOff="Sat"
+            android:textOn="Sat"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layer_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/schedule_days"
+        android:layout_marginTop="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/delete_schedule"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_weight="1"
+            android:text="Everday"
+            android:textColor="@color/colorBlack"
+            android:textSize="13sp"
+            app:fontFamily="serif" />
+
+        <ImageView
+            android:id="@+id/image_down"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="5dp"
+            app:srcCompat="@drawable/down_arrow" />
+
+
+    </LinearLayout>
+</RelativeLayout>

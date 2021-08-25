@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Jal Track</string>
+
+    <string name="ad_app_id">ca-app-pub-9949332240818535~5460568529</string>
+
+    <!-- TEST UNID IDS -->
+    <string name="banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="interstitial_ad_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="native_advanced_ad_id">ca-app-pub-3940256099942544/2247696110</string>
+
+    <!--    RELEASE UNIT IDS-->
+    <!--        <string name="banner_ad_id">ca-app-pub-9949332240818535/4311138388</string>-->
+    <!--        <string name="interstitial_ad_id">ca-app-pub-9949332240818535/8784628066</string>-->
+    <!--        <string name="native_advanced_ad_id">ca-app-pub-9949332240818535/5583749653</string>-->
+
+
+    <string name="faq_question">Why does Jaltrack not work ?</string>
+    <string name="faq_answer">Sometimes jaltrack does not ring at scheduled time, because of cleaner
+        appsor phone system shut off jaltrack.\n\nIf you have installed cleaner apps like CM security,
+        please make sure they do not stop jaltrack.\n\nSome devices such as SamSung, have strict
+        power plans, the system will shut off jaltrack after locking your screen. We suggest you add
+        jaltrack to the unmonitored apps list to avoid missing reminders.</string>
+    <string name="privacy_policy">We have created apps with respect to user\'s privacy. Our apps
+        does not collect any data or information from the phone or user. But to make apps work properly
+        we sometimes request permissions for: \n\n 1) Access WIFI for showing ads inside the app\n
+        2) Read external storage\n\nWith Jaltrack app: This permission is used only to access your
+        phone for reminders.</string>
+
+</resources>

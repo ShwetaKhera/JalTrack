@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#f3f3f3"
+    android:orientation="vertical"
+    android:paddingBottom="50dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f3f3f3"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp">
+
+            <ImageView
+                android:id="@+id/image_prev"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/left_arrow" />
+
+            <TextView
+                android:id="@+id/chart_data_interval"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1"
+                android:text="May 2020"
+                android:textColor="@color/colorGrey"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/image_next"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:tint="@color/colorPrimaryDark"
+                app:srcCompat="@drawable/right_arrow" />
+        </LinearLayout>
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barchart"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="2.5dp">
+
+            <Button
+                android:id="@+id/button_weekly"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_round_corners"
+                android:backgroundTint="#f3f3f3"
+                android:text="Weekly"
+                android:textAllCaps="false"
+                android:textColor="@color/colorGrey" />
+
+            <Button
+                android:id="@+id/button_monthly"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/background_round_corners"
+                android:backgroundTint="#f3f3f3"
+                android:text="Monthly"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimaryDark" />
+
+            <Button
+                android:id="@+id/button_yearly"
+                style="?android:attr/borderlessButtonStyle"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-5dp"
+                android:layout_weight="1"
+                android:background="@drawable/background_round_corners"
+                android:backgroundTint="#f3f3f3"
+                android:text="Yearly"
+                android:textAllCaps="false"
+                android:textColor="@color/colorGrey" />
+        </LinearLayout>
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView_banner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:adSize="BANNER"
+            app:adUnitId="@string/banner_ad_id" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="50dp"
+            android:paddingBottom="20dp"
+            android:background="@drawable/background_round_corners"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"
+                android:padding="15dp"
+                android:text="Drink Report"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView8"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/border_clock_layer1"
+                    android:backgroundTint="#6dfd30" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="serif"
+                    android:text="Weekly Average"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/weekly_average"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="serif"
+                    android:gravity="right"
+                    android:text="1063 ml / day"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/border_clock_layer1"
+                    android:backgroundTint="#fd9927" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="serif"
+                    android:text="Monthly Average"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/monthly_average"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="serif"
+                    android:gravity="right"
+                    android:text="1027 ml / day"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/border_clock_layer1"
+                    android:backgroundTint="#fc0d1b" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="serif"
+                    android:text="Average Completion"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/average_completion"
+                    android:layout_width="match_parent"
+                    android:gravity="right"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="serif"
+                    android:text="71 %"
+                    android:layout_marginRight="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/border_clock_layer1"
+                    android:backgroundTint="#fffd38" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="serif"
+                    android:text="Drink Frequency"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+
+
+                <TextView
+                    android:id="@+id/drink_frequency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:fontFamily="serif"
+                    android:text="7 times / day"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="15dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
